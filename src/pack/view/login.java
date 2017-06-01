@@ -140,13 +140,13 @@ public class login extends javax.swing.JFrame {
         Connection connection;
         PreparedStatement ps;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/sekolah_db?zeroDate TimeBehavior=convertToNull", "root", "");
-            ps = connection.prepareStatement("SELECT * FROM `akun` WHERE `username` = ? AND `password` = ?");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/Apotek_db?zeroDate TimeBehavior=convertToNull", "root", "");
+            ps = connection.prepareStatement("SELECT * FROM `admin` WHERE `username` = ? AND `password` = ?");
             ps.setString(1, txtnama.getText());
             ps.setString(2, txtpass.getText());
             ResultSet result = ps.executeQuery();
             if (result.next()) {
-                new form().show();
+                new home().show();
                 //perlu deklarasi user diclass utama.                 
                 user = txtnama.getText();
                 
@@ -167,7 +167,7 @@ public class login extends javax.swing.JFrame {
         
         try{
             try(Statement statement = (Statement) koneksi_masuk.GetConnection().createStatement()){
-                statement.executeUpdate("INSERT INTO akun VALUES ('"+user+"', '"+p+"')");
+                statement.executeUpdate("INSERT INTO admin VALUES ('"+user+"', '"+p+"')");
             } 
             JOptionPane.showMessageDialog(null, "Sign Up Berhasil");
         } catch (Exception ex) {

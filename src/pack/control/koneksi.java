@@ -45,7 +45,7 @@ public class koneksi {
     }
 
     public static Connection setKoneksi() {
-        String konString = "jdbc:mysql://localhost:3306/sekolah_db";
+        String konString = "jdbc:mysql://localhost:3306/Apotek_db";
         Connection koneksi = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");

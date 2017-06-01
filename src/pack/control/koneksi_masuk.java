@@ -22,7 +22,7 @@ public class koneksi_masuk {
             SQLException {
         if (konek == null) {
             Driver driver = new Driver();
-            konek = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/sekolah_db?"
+            konek = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/Apotek_db?"
                     + "zeroDateTimeBehavior=convertToNull", "root", "");
         }
         return konek;
