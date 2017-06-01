@@ -134,18 +134,18 @@ public class home extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Swis721 Cn BT", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Data Barang Toko");
+        jLabel1.setText("Data Obat Apotek");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(300, 20, 310, 60);
 
         jLabel2.setFont(new java.awt.Font("NSimSun", 0, 24)); // NOI18N
-        jLabel2.setText("Admin Toko");
+        jLabel2.setText("Apoteker");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(10, 20, 130, 20);
 
@@ -157,7 +157,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 900, 110);
 
-        jPanel2.setBackground(new java.awt.Color(255, 204, 204));
+        jPanel2.setBackground(new java.awt.Color(51, 153, 255));
         jPanel2.setLayout(null);
         jPanel2.add(txtnama);
         txtnama.setBounds(10, 110, 240, 30);
